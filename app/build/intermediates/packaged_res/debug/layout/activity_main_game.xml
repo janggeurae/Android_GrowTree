@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fullLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/gameoverLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/dino"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="70dp"
+                    android:src="@drawable/dinosaurr0" />
+
+
+                <LinearLayout
+                    android:id="@+id/itemLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/coin"
+                        android:layout_width="35dp"
+                        android:layout_height="50dp"
+                        android:padding="7dp"
+                        android:src="@drawable/pixelcoin" />
+
+                    <ImageView
+                        android:id="@+id/can"
+                        android:layout_width="35dp"
+                        android:layout_height="50dp"
+                        android:padding="3dp"
+                        android:src="@drawable/can" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom">
+
+                <LinearLayout
+                    android:id="@+id/roadLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/road"
+                        android:layout_width="67dp"
+                        android:layout_height="78dp"
+                        android:src="@drawable/roadblock" />
+
+                    <ImageView
+                        android:layout_width="67dp"
+                        android:layout_height="78dp"
+                        android:src="@drawable/roadblock" />
+
+                    <ImageView
+                        android:layout_width="67dp"
+                        android:layout_height="78dp"
+                        android:src="@drawable/roadblock" />
+
+                    <ImageView
+                        android:layout_width="67dp"
+                        android:layout_height="78dp"
+                        android:src="@drawable/roadblock" />
+
+                    <ImageView
+                        android:layout_width="67dp"
+                        android:layout_height="78dp"
+                        android:src="@drawable/roadblock" />
+
+                    <ImageView
+                        android:id="@+id/hole"
+                        android:layout_width="67dp"
+                        android:layout_height="78dp" />
+
+                    <ImageView
+                        android:layout_width="67dp"
+                        android:layout_height="78dp"
+                        android:src="@drawable/roadblock" />
+
+                    <ImageView
+                        android:layout_width="67dp"
+                        android:layout_height="78dp"
+                        android:src="@drawable/roadblock" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/scorebox"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="3dp">
+
+                    <ImageView
+                        android:id="@+id/countCoinImg"
+                        android:layout_width="18dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/pixelcoin" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="7dp"
+                        android:text="X"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/countCoin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="100"
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:id="@+id/countCanImg"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/can" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="7dp"
+                        android:text="X"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/countCan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="100"
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:text="Score !!!"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:padding="3dp"
+                    android:src="@drawable/pixelcoin" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="7dp"
+                    android:text="X"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/resultCoin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="100"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/can" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="7dp"
+                    android:text="X"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/resultCan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="100"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/restart"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/greenbutton"
+                android:text="게임 다시하기" />
+
+            <Button
+                android:id="@+id/home"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/greenbutton"
+                android:text="처음으로" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
